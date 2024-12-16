@@ -16,7 +16,7 @@ function HeroSection() {
           rel="noopener noreferrer"
           className="cta-button whatsapp-button"
         >
-          קבעו את יום ההולדת עכשיו!
+          בדקו זמינות לתאריך שלכם!
         </a>
         
         <a

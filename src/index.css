@@ -41,7 +41,6 @@ button:hover, .cta-button:hover {
   background-color: #5F8A63;
 }
 
-/* Header */
 .header {
   background-color: var(--primary-color);
   display: flex;
@@ -401,9 +400,6 @@ h1, h2, h3 {
   }
 }
 
-css
-Copy code
-/* Header */
 .header {
   background-color: #6D9F71;
   display: flex;
@@ -450,7 +446,6 @@ Copy code
   }
 }
 
-/* Header */
 .header {
   background-color: #6D9F71;
   display: flex;
@@ -505,6 +500,7 @@ Copy code
   background-color: #5F8A63;
   border-radius: 4px;
 }
+
 
 @media (max-width: 768px) {
   .hamburger {
@@ -912,5 +908,3 @@ Copy code
 .contact-button:hover {
   background-color: #5A8D5E;
 }
-
-
