@@ -1,0 +1,916 @@
+/* 🌿 פלטת צבעים רכה 🌿 */
+:root {
+  --primary-color: #6D9F71; 
+  --secondary-color: #BFAF95; 
+  --highlight-color: #F2D7D0; 
+  --background-color: #FDF8F4; 
+  --text-color: #4F4F4F; 
+}
+
+/* עיצוב כללי */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button, .cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover, .cta-button:hover {
+  background-color: #5F8A63;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--highlight-color);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta-button {
+  margin-top: 20px;
+}
+
+.gallery {
+  position: relative;
+  padding: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.gallery-container img {
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 8px;
+}
+
+.arrow {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.package {
+  border: 2px solid var(--secondary-color);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.featured {
+  border: 3px solid var(--primary-color);
+  background-color: var(--highlight-color);
+}
+
+.package h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.package p {
+  font-size: 16px;
+}
+
+.testimonials {
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0;
+  border: 1px solid var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+.testimonial strong {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.testimonial p {
+  margin-top: 5px;
+}
+
+.contact-form {
+  background-color: var(--highlight-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #5F8A63;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* כללי */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FDF8F4;
+  color: #4F4F4F;
+  direction: rtl;
+  text-align: right;
+}
+
+h1, h2, h3 {
+  color: #6D9F71;
+}
+
+.gallery {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.gallery-container img {
+  width: 30%; /* שלוש תמונות במקביל */
+  margin: 0 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+
+.arrow {
+  background-color: #6D9F71;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.testimonials {
+  background-color: #FDF8F4;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  border: 1px solid #BFAF95;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #6D9F71;
+}
+
+.testimonial strong {
+  font-weight: bold;
+  color: #6D9F71;
+}
+
+.testimonial p {
+  margin-top: 5px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #6D9F71;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  border: 1px solid #BFAF95;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container img {
+    width: 80%; /* הצגת תמונה אחת בכל פעם בנייד */
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+  .packages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .package {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .gallery-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    text-align: right;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+css
+Copy code
+/* Header */
+.header {
+  background-color: #6D9F71;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu.open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #6D9F71;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+/* Header */
+.header {
+  background-color: #6D9F71;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  height: 70px; /* הגדלת הלוגו */
+  margin: 0 auto; /* ממרכז את הלוגו */
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* ימני למעלה */
+  top: 20px; 
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu.open {
+  display: block;
+  background-color: #6D9F71;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-menu a:hover {
+  background-color: #5F8A63;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none; /* ברירת מחדל: מוסתר */
+  }
+}
+
+.service-description {
+  text-align: center; /* ממרכז את הטקסט */
+  margin: 20px auto 10px; /* צמצום הרווח התחתון */
+  padding: 10px 0; /* רווח פנימי אנכי */
+  color: #4F4F4F; /* צבע טקסט עדין */
+}
+
+.service-description h2 {
+  color: #6D9F71; /* כותרת בצבע ירוק טבעי */
+  margin-bottom: 5px; /* מרווח קטן מתחת לכותרת */
+}
+
+.service-description p {
+  font-size: 18px; /* טקסט קריא יותר */
+  line-height: 1.6; /* ריווח נעים בין שורות */
+  margin-bottom: 5px; /* צמצום רווח בין פסקה לחלק הבא */
+}
+
+.gallery {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.gallery-container img {
+  width: 30%;
+  margin: 0 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img.active {
+  transform: scale(1.05);
+}
+
+.swipe-hint {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipe-hint.left {
+  left: 10px;
+}
+
+.swipe-hint.right {
+  right: 10px;
+}
+
+.swipe-hint:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .gallery-container img {
+    width: 80%; /* בניידים תמונה אחת בלבד */
+  }
+
+  .swipe-hint {
+    animation: hintBounce 1s infinite;
+  }
+
+  .swipe-hint.left {
+    left: 5%;
+  }
+
+  .swipe-hint.right {
+    right: 5%;
+  }
+}
+
+@keyframes hintBounce {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  touch-action: pan-y; /* מאפשר החלקה רק אופקית */
+}
+
+.gallery {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.gallery-container img {
+  width: 30%; /* דסקטופ: 3 תמונות */
+  margin: 0 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img.active {
+  transform: scale(1.05); /* הגדלה קלה של תמונה פעילה */
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.control.left {
+  left: 10px;
+}
+
+.control.right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery-container img {
+    width: 80%; /* בנייד, תמונה אחת */
+  }
+
+  .control {
+    display: none; /* החצים מוסתרים בנייד */
+  }
+}
+/*******************************/
+.gallery {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.gallery-container img {
+  width: 30%;
+  margin: 0 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img.active {
+  transform: scale(1.05);
+}
+
+.swipe-hint {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipe-hint.left {
+  left: 10px;
+}
+
+.swipe-hint.right {
+  right: 10px;
+}
+
+.swipe-hint:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .gallery-container img {
+    width: 80%; /* בניידים תמונה אחת בלבד */
+  }
+
+  .swipe-hint {
+    animation: hintBounce 1s infinite;
+  }
+
+  .swipe-hint.left {
+    left: 5%;
+  }
+
+  .swipe-hint.right {
+    right: 5%;
+  }
+}
+
+@keyframes hintBounce {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+.contact-form {
+  background-color: #FDF8F4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6D9F71;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4F4F4F;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #BFAF95;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #6D9F71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5F8A63;
+}
+
+.contact-form {
+  background-color: #FDF8F4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6D9F71;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4F4F4F;
+  text-align: right; /* יישור לימין */
+  direction: rtl; /* הופך את כיוון הטקסט לימין */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #BFAF95;
+  font-size: 16px;
+  width: 100%;
+  text-align: right; /* יישור התוכן של הקלט לימין */
+  direction: rtl; /* עבור טקסט RTL */
+}
+
+.contact-form button {
+  background-color: #6D9F71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* כפתור מותאם לרוחב מלא */
+}
+
+.contact-form button:hover {
+  background-color: #5F8A63;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 15px;
+    max-width: 90%; /* מגדיל את הטופס למלא יותר מהמסך בנייד */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px; /* גודל טקסט נוח יותר לנייד */
+  }
+
+  .contact-form button {
+    font-size: 16px; /* גודל כפתור מותאם לנייד */
+  }
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* רווח בין הכפתורים */
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button {
+  background-color: #4ADE80; /* ירוק של וואטסאפ */
+}
+
+.whatsapp-button:hover {
+  background-color: #1EBE57;
+}
+
+.contact-button {
+  background-color: #6D9F71; /* ירוק רגוע לטופס */
+}
+
+.contact-button:hover {
+  background-color: #5A8D5E;
+}
+
+
